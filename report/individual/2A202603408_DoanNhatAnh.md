@@ -141,16 +141,16 @@ Thu thập thông tin sản phẩm [chưa đo]
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Đưa ra ba candidate từ CP1/CP2: kiểm tra code tạo tự động, tự đánh giá mức độ hiểu bài sau khi dùng công cụ hỗ trợ, và kiểm tra quảng cáo trước khi đăng | Cung cấp các phương án để nhóm xem xét; nhóm chọn đào sâu bài toán chuẩn bị dữ liệu BCTC |
+| Phản biện bài của bạn khác | Câu hỏi đã ghi nhận: dữ liệu lấy từ đâu, lấy như thế nào và người nêu có từng gặp vấn đề thực tế chưa? | Hướng thảo luận về nguồn dữ liệu và bằng chứng thay vì chỉ bàn giải pháp |
+| Nhận phản biện | Câu hỏi đã ghi nhận: có thể giải thích rõ hơn vấn đề #2 không? | Viết lại card #2 để làm rõ vấn đề; cần người viết kiểm tra nội dung cuối có phản ánh đúng trải nghiệm |
+| Gom cluster / cây OST | Đóng góp các candidate cá nhân làm đầu vào; cùng hướng thảo luận vào cơ hội giảm công sức chuẩn bị dữ liệu phân tích tín nhiệm | Cây OST trong báo cáo là bản phân tích sơ bộ; cần nhóm xác nhận với ghi chép CP3 |
+| Chọn candidate problem | Đưa các vấn đề từ CP1/CP2 ra để nhóm cân nhắc; nhóm đã chọn thu thập và chuẩn hóa BCTC 5 năm của doanh nghiệp và peer | Tạo cơ sở để tiếp tục phân tích một quy trình và outcome cụ thể |
+| Kiểm chứng / research | Dựa trên bài toán đã chọn, xác định giả định và câu hỏi cần kiểm tra; tổng hợp nguồn công khai về XBRL, Power Query và trích xuất tài liệu | Làm rõ phương án hiện có và điểm cần xác minh; chưa có phỏng vấn, survey hoặc log thời gian được ghi nhận |
+| Quy trình nhóm | Hệ thống hóa quy trình dự kiến từ xác định phạm vi, thu thập BCTC, trích xuất/nhập, chuẩn hóa, kiểm tra đến tổng hợp | Nêu trích xuất/nhập/chuẩn hóa là bottleneck giả thuyết; cần đo từng bước trên quy trình thật |
+| Problem Statement | Dùng thông tin nhóm cung cấp để soạn bản nháp actor, quy trình, impact, metric và boundary | Làm rõ baseline 1–2 ngày là ước tính ban đầu và 4 giờ là target thử nghiệm, không phải số đo đã xác nhận |
+| Mức can thiệp AI | So sánh No AI, Rule, Workflow và Agent; đề xuất thử Rule trước và chỉ thử Workflow nếu có bằng chứng Rule không đủ | Đưa ra lựa chọn có điều kiện, giữ chuyên viên ở bước duyệt và không để AI quyết định tín nhiệm |
+| Quyết định | Đề xuất Not Yet cho đến khi xác nhận quy trình, quyền dữ liệu, độ chính xác và target qua pilot; đây là đề xuất, cần đối chiếu quyết định chính thức của nhóm | Tránh kết luận Go khi chưa có kiểm chứng và nêu rõ điều kiện cần đạt trước khi triển khai |
 
 ---
 
@@ -158,12 +158,12 @@ Thu thập thông tin sản phẩm [chưa đo]
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
+| CP1 Scan |Nhờ AI gợi ý thêm các vấn đề có thể gặp trong học tập, lập trình và công việc; hỗ trợ diễn đạt các vấn đề theo cấu trúc Job Story |Mở rộng góc nhìn, giúp tôi nhận diện thêm các vấn đề và có nhiều lựa chọn để xem xét |Một số ý tưởng còn chung chung, thiên về giải pháp hoặc chưa có bằng chứng cho thấy người dùng thực sự gặp vấn đề |Chọn lọc những vấn đề có bối cảnh và đối tượng chịu ảnh hưởng tương đối rõ ràng; loại bỏ ý tưởng quá rộng hoặc chỉ mô tả sản phẩm, giải pháp |
 | CP2 Problem Card | Nhờ AI phản biện 3 card về actor, quy trình, bottleneck và metric | Chỉ ra các chỗ chưa có quan sát thực tế hoặc baseline | AI không biết quy trình, thời lượng hay impact thực tế của người dùng | Không xem quy trình/số liệu gợi ý là dữ kiện; đánh dấu là giả thuyết/chưa đo và để việc chọn card muốn pitch chờ xác nhận cá nhân |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP4 Research | AI hỗ trợ tìm và tóm lược tài liệu công khai về XBRL, Power Query và trích xuất tài liệu | Gợi ý cách so sánh công cụ với các bước trong quy trình | Tài liệu nhà cung cấp mô tả khả năng sản phẩm, không chứng minh phù hợp với dữ liệu hoặc nghiệp vụ của nhóm | Chỉ dùng để hình thành hướng research; chưa xem là bằng chứng thực tế về quy trình nhóm |
+| CP5 Quy trình | AI hỗ trợ chuyển mô tả bài toán thành quy trình hiện tại/tương lai có các bước, kiểm tra và fallback | Giúp làm rõ điểm có thể dùng Rule, điểm giả thuyết cần AI và vai trò chuyên viên | Quy trình được dựng từ mô tả, chưa được quan sát tại nơi làm việc và có thể thiếu ngoại lệ | Đánh dấu là mô hình cần xác nhận; giữ duyệt thủ công và đo thời gian từng bước |
+| CP5–6 Problem Statement | AI hỗ trợ cấu trúc actor, bottleneck, impact, metric và boundary từ problem nhóm cung cấp | Giữ problem tập trung vào dữ liệu BCTC đầu vào, không mặc định AI là giải pháp | Baseline 1–2 ngày và target 4 giờ chưa được kiểm chứng; cách diễn đạt có thể khiến ước tính trông như số đo | Ghi rõ baseline là ước tính, target là đề xuất pilot; yêu cầu định nghĩa “được chấp thuận” và cách bấm giờ |
+| CP6 Mức can thiệp / quyết định | AI hỗ trợ so sánh No AI/Rule/Workflow/Agent, lập tiêu chí eval và rủi ro | Nêu lựa chọn Rule-first, human review và hướng Not Yet | Chưa có pilot, kiểm tra bảo mật/chi phí hoặc bằng chứng Rule không đủ; phân tích AI không thay thế quyết định nhóm | Giữ mức AI là giả thuyết, đề xuất Not Yet và yêu cầu nhóm xác nhận trước khi xem là quyết định chính thức |
 
 ---
 
@@ -172,21 +172,32 @@ Thu thập thông tin sản phẩm [chưa đo]
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+-  tôi nhận thấy mỗi vấn đề đều xuất phát từ một khó khăn cụ thể trong học tập hoặc công việc. Qua đó, tôi hiểu rằng một vấn đề tốt không chỉ cần có ý tưởng thú vị mà còn phải xác định rõ người gặp vấn đề, hoàn cảnh xảy ra và ảnh hưởng của nó. Tôi cũng nhận ra cần phân biệt giữa vấn đề thực sự của người dùng và giải pháp mà mình muốn xây dựng.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+-  nhóm có phần bị solution-first khi bắt đầu nghĩ đến việc sử dụng AI, OCR hoặc tự động hóa để xử lý BCTC. Ban đầu, chúng tôi tập trung khá nhiều vào công nghệ có thể áp dụng mà chưa phân tích đầy đủ từng công đoạn trong quy trình hiện tại. Sau đó, nhóm quay lại xem xét quy trình từ khâu chọn doanh nghiệp, thu thập BCTC, trích xuất, chuẩn hóa đến kiểm tra dữ liệu. Nhờ vậy, nhóm xác định được công đoạn cần ưu tiên cải thiện thay vì chỉ tập trung vào việc sử dụng AI.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+- Có. Ban đầu, tôi quan tâm đến vấn đề kiểm tra code được tạo tự động và phát hiện lỗi trước khi tích hợp. Tuy nhiên, khi so sánh các candidate và thảo luận về tính cụ thể, khả năng xác định bottleneck cũng như phạm vi triển khai, tôi nhận thấy vấn đề chuẩn hóa BCTC có quy trình nghiệp vụ rõ ràng hơn. Tôi cũng hiểu rằng không nên chỉ dựa vào cảm nhận về mức độ hữu ích của một ý tưởng mà cần xem xét khả năng đo lường và kiểm chứng vấn đề. Vì vậy, tôi đồng tình với việc nhóm lựa chọn vấn đề BCTC để tiếp tục phát triển.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+- Điều khiến tôi chú ý là quy trình chuẩn bị dữ liệu BCTC không chỉ đơn giản là thu thập tài liệu mà còn bao gồm nhiều công đoạn như trích xuất, ánh xạ chỉ tiêu, chuẩn hóa đơn vị và kỳ báo cáo, sau đó đối chiếu lại với nguồn. Những công đoạn này có thể làm tăng thời gian xử lý và nguy cơ sai sót. Tuy nhiên, con số 1–2 ngày hiện mới là baseline ước tính được nêu trong Problem Card, chưa phải kết quả đo lường thực tế. Tôi nhận ra cần có thêm dữ liệu từ người thực hiện công việc để xác định chính xác công đoạn tốn thời gian nhất.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+- Điều khó nhất đối với tôi là diễn đạt vấn đề đủ cụ thể nhưng không biến Problem Statement thành phần mô tả giải pháp. Với đề tài này, cần tập trung vào nhu cầu của chuyên viên phân tích tín nhiệm trong việc có bộ dữ liệu BCTC đầy đủ, nhất quán và có thể so sánh. Đồng thời, phải giới hạn phạm vi ở khâu chuẩn bị dữ liệu, không mở rộng sang việc tự động phân tích hoặc quyết định xếp hạng tín nhiệm. Việc xác định đúng phạm vi giúp nhóm tránh phát triển một giải pháp quá rộng so với vấn đề ban đầu.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+- Nếu được thực hiện lại, tôi sẽ dành nhiều thời gian hơn để tìm hiểu quy trình thực tế và thu thập bằng chứng trước khi đề xuất giải pháp. Tôi cũng sẽ chú ý đo thời gian riêng cho từng công đoạn thay vì chỉ sử dụng tổng thời gian 1–2 ngày. Khi phản biện, tôi muốn đặt câu hỏi sâu hơn về độ chính xác của dữ liệu sau trích xuất, khả năng ánh xạ các chỉ tiêu khác tên nhưng cùng ý nghĩa và cách xử lý những trường hợp thiếu hoặc bất thường. Ngoài ra, tôi sẽ kiểm tra kỹ hơn tính khả thi của mục tiêu tối đa 4 giờ trước khi xem đó là tiêu chí thành công.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+- Vấn đề nhóm tôi lựa chọn là việc thu thập và chuẩn hóa BCTC 5 năm của doanh nghiệp và các peer để phục vụ phân tích tín nhiệm. Quy trình gồm chọn doanh nghiệp, thu thập tài liệu, trích xuất số liệu, chuẩn hóa chỉ tiêu, kiểm tra và xuất bộ dữ liệu. Nhóm sử dụng thời gian xử lý làm metric chính, với baseline ước tính 1–2 ngày và mục tiêu thử nghiệm tối đa 4 giờ. Boundary là không tự suy diễn dữ liệu bị thiếu, không tự quyết định xếp hạng tín nhiệm và phải có chuyên viên duyệt dữ liệu. AI được dùng để hỗ trợ OCR và đề xuất ánh xạ những chỉ tiêu chưa khớp, trong khi Rule xử lý các trường hợp rõ ràng và kiểm tra tính hợp lệ. Nhóm lựa chọn AI-assisted Workflow kết hợp Rule và Human-in-the-loop thay vì Agent tự động hoàn toàn vì dữ liệu tài chính cần độ chính xác, khả năng truy xuất nguồn và sự kiểm soát của con người.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+1. Tài liệu hướng dẫn bài lab K5-L3A-Day02 – Discovery & Problem Framing.
+2. Tài liệu và biểu mẫu báo cáo tài chính của doanh nghiệp được sử dụng trong quá trình nghiên cứu.
+3. Tài liệu hướng dẫn sử dụng Microsoft Excel và Power Query trong xử lý, chuẩn hóa dữ liệu.
+4. Tài liệu hướng dẫn về OCR và trích xuất dữ liệu từ tài liệu PDF.
+5. Tài liệu nghiên cứu về ứng dụng AI trong xử lý tài liệu và chuẩn hóa dữ liệu.
