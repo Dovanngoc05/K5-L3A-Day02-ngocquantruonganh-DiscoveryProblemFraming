@@ -24,15 +24,21 @@
 | 4 | Nguyễn Thế Trường | Khi đến hạn nộp bài lab hàng tuần, tôi muốn đối chiếu toàn bộ checklist và cấu trúc file nộp, để không bị trừ điểm vì lỗi format ngớ ngẩn | Sinh viên thực hành lab | Rà soát thủ công từng file và mục báo cáo markdown (20–25 phút) | *"Nếu chỉ kiểm tra tên file và định dạng thì viết script regex/linter là xong, việc gì phải dùng AI?"* (Lê Hoàng Quân hỏi) |
 | 5 | Nguyễn Thế Trường | Khi ôn tập thi cuối kỳ, tôi muốn gom các câu hỏi và giải đáp của GV/TA trên Discord/Zalo, để ôn tập đúng trọng tâm mà không phải lội tin nhắn | Sinh viên chuẩn bị thi | Cuộn tìm tin nhắn và ghép cặp câu hỏi - lời giải đáp (60–75 phút) | *"Tin nhắn chat sinh viên viết tắt và ngắt quãng nhiều thì làm sao gom đúng ngữ cảnh?"* (Đỗ Văn Ngọc hỏi) |
 | 6 | Nguyễn Thế Trường | Khi thực hành AI mới, tôi muốn tự động sửa các lỗi xung đột giữa PyTorch, CUDA và NVIDIA driver, để chạy code mẫu không mất cả buổi | Sinh viên học AI/Deep Learning | Tìm cách fix trên StackOverflow và gỡ cài lại nhiều lần (35–45 phút) | *"Mỗi máy một cấu hình card và OS khác nhau, tra cứu rule matrix có đủ không hay cần AI?"* (Đoàn Nhật Ánh hỏi) |
+| 7 | Đoàn Nhật Anh | Khi làm bài có công cụ hỗ trợ, muốn biết phần kiến thức có thể tự giải thích và vận dụng để thực sự nắm bài |Sinh viên |Tự nhận diện phần chưa hiểu sau khi hoàn thành bài |Thành viên nhóm (Lê Hoàng Quân): Làm thế nào để xác định sinh viên thực sự chưa hiểu kiến thức, thay vì chỉ chưa nhớ cách diễn đạt? Có thể dùng bài kiểm tra hoặc yêu cầu tự giải thích để đo mức độ hiểu không? |
+| 8 | Đoàn Nhật Anh | Khi nhận code tạo tự động, muốn phát hiện lỗi và ảnh hưởng tương thích trước khi tích hợp |Người học/lập trình viên |Rà logic và phụ thuộc trong ngữ cảnh code |Thành viên nhóm (Đỗ văn ngọc): “Có thể giải thích rõ hơn vấn đề #2 không?”  |
+| 9 | Đoàn Nhật Anh | Khi chuẩn bị đăng quảng cáo, muốn đối chiếu nội dung với thông tin sản phẩm để tránh gây hiểu nhầm |Người bán online/người phụ trách quảng cáo |Đối chiếu mô tả, hình ảnh và giá |Thành viên nhóm (Nguyễn thế trường): Người bán thường phát hiện nội dung quảng cáo sai lệch bằng cách nào? Những sai lệch nào dễ xảy ra nhất: mô tả sản phẩm, hình ảnh hay giá bán? |
 | 4–12 | **[Các thành viên khác điền]** | **[Candidate đã pitch]** | | | |
 
 ### 2.2. Cluster
 
 | Cluster đề xuất để nhóm xem xét | Các candidate | Pattern chung |
 |---|---|---|
-| A — Chuẩn bị dữ liệu | Nhập, chuẩn hóa BCTC và peer. Sửa các lỗi xung đột giữa Pytorch, CUDA và NVIDIA driver | Dữ liệu phân tán, nhiều thao tác thủ công |
-| B — Kiểm soát chất lượng | Đối chiếu số liệu giữa các nguồn và báo cáo. Đối chiếu toàn bộ checklist và cấu trúc file nộp | Cần phát hiện sai lệch, bảo đảm nhất quán |
-| C — Tổng hợp bằng chứng | Thu thập, xác minh thông tin đa nguồn. gom các câu hỏi và giải đáp của GV/TA trên Discord/Zalo, để ôn tập đúng trọng tâm mà không phải lội tin nhắn | Nhiều nguồn thông tin và công đoạn xác minh |
+| A — Chuẩn bị dữ liệu | Nhập, chuẩn hóa BCTC và peer | Dữ liệu phân tán, nhiều thao tác thủ công |
+| B — Kiểm soát chất lượng | Đối chiếu số liệu giữa các nguồn và báo cáo | Cần phát hiện sai lệch, bảo đảm nhất quán |
+| C — Tổng hợp bằng chứng | Thu thập, xác minh thông tin đa nguồn | Nhiều nguồn thông tin và công đoạn xác minh |
+| A — Kiểm tra độ tin cậy của đầu ra | Kiểm tra code tạo tự động; xác định phần kiến thức tự hiểu | Cần phát hiện sai sót hoặc khoảng trống hiểu biết trước khi dựa vào đầu ra |
+| B — Kiểm duyệt nội dung trước khi công bố | Kiểm tra quảng cáo tạo tự động | Cần đối chiếu nội dung với nguồn chuẩn trước khi đăng |
+| C — Chuẩn bị dữ liệu phân tích | Thu thập và chuẩn hóa BCTC doanh nghiệp và peer | Dữ liệu nhiều kỳ/đối tượng cần được tập hợp, chuẩn hóa và kiểm tra trước khi phân tích |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
@@ -55,9 +61,6 @@ Những ý là *solution* cần tách khỏi opportunity: “xây chatbot”, �
 | Nhập và chuẩn hóa BCTC | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | Đối chiếu số liệu | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | Tổng hợp thông tin đa nguồn | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Kiểm tra checklist & cấu trúc bài lab (Trường) | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Gom câu hỏi & giải đáp trên Discord/Zalo (Trường) | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Tự động sửa lỗi xung đột CUDA/PyTorch (Trường) | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 
 **Candidate được chọn theo thông tin anh Quân cung cấp:** Nhập và chuẩn hóa BCTC của doanh nghiệp và peer.
 
@@ -79,8 +82,8 @@ Những ý là *solution* cần tách khỏi opportunity: “xây chatbot”, �
 | 4 | Một bộ ánh xạ chỉ tiêu có thể xử lý sự khác nhau giữa ngành và biểu mẫu | Feasibility | 4 | 4 | Có |
 | 5 | Chuyên viên có thể rà soát và sửa lỗi từ hệ thống hỗ trợ | Usability | 5 | 5 | Có |
 | 6 | Thời gian tiết kiệm lớn hơn chi phí triển khai, vận hành và kiểm soát | Viability | 5 | 3 | Có |
-| 7 | Cần kết hợp Rule-based kiểm tra cân đối kế toán (Tổng TS = Nợ + VCSH) ngay sau khi AI trích xuất để phát hiện sai lệch số liệu | Feasibility | 5 | 3 | Có (Trường bổ sung) |
-
+| 7 | Một hồ sơ gồm doanh nghiệp và peer, 5 năm BCTC hiện mất khoảng 1–2 ngày làm việc | Value | 5 | 2 | Có — xác nhận với chuyên viên và bấm giờ theo từng công đoạn |
+| 8 | Trích xuất/nhập/chuẩn hóa chiếm phần lớn thời gian và là bottleneck chính | Value | 5 | 1 | Có — quan sát một hồ sơ thực tế và ghi thời lượng từng bước |
 ### 3.2. Kiểm chứng bằng người thật
 
 **Tình trạng:** Chưa có phỏng vấn/survey được cung cấp. Nhóm phải tự phỏng vấn 2–3 người phù hợp hoặc làm micro-survey 5–10 người; không dùng AI giả lập người trả lời.
@@ -95,11 +98,9 @@ Các câu hỏi tham khảo theo *The Mom Test*:
 | Người được hỏi (vai trò, không ghi tên) | Thời điểm, phương pháp | Hành vi thực tế và thời gian | Workaround | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---|---|---|---|---|
 | [Người 1] | Nhập dữ liệu thủ công | 1-2 ngày |  |  Kết quả cải thiện khi dùng | Xác nhận đúng |
-| Chuyên viên phân tích tín dụng KHDN |  phỏng vấn trực tiếp (25 phút) | Thẩm định hồ sơ BCTC scan 5 năm của công ty xây dựng và 5 peer; mất gần 12 tiếng gõ và chuẩn hóa số liệu vào mẫu nội bộ. | Giao thực tập sinh nhập liệu; mở 2 màn hình để soi PDF đối chiếu bảng tính; viết hàm SUM kiểm tra đối ứng. | Khâu nhập liệu và chuẩn hóa tên gọi chỉ tiêu BCTC chiếm 60–70% tổng thời gian xử lý hồ sơ. | Không dám dùng số liệu nếu công cụ AI trích xuất không có Bounding Box highlight đối soát trực tiếp trên file PDF gốc. |
-| Trưởng nhóm Thẩm định & Xếp hạng (Quỹ đầu tư) | 2 tuần trước, phỏng vấn qua Google Meet (30 phút) | Lập báo cáo xếp hạng 1 công ty sản xuất và 4 peer; mất 2 ngày làm việc cho khâu chuẩn bị và làm sạch dữ liệu. | Dùng template Excel nội bộ tích hợp các công thức kiểm tra logic kế toán cơ bản (Tổng TS = Tổng Nguồn vốn). | Chuẩn hóa dữ liệu thủ công 5 năm là điểm nghẽn lớn nhất làm chậm tiến độ trình Hội đồng rủi ro. | Các khoản mục phức tạp ở Thuyết minh BCTC bắt buộc chuyên viên phải tự phân loại, AI không được tự ý quyết định. |
 
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:** Giữ lựa chọn bài toán BCTC nhưng thu hẹp phạm vi vào BCTC PDF scan của doanh nghiệp phi niêm yết / SME; bắt buộc bổ sung yêu cầu đối soát nguồn trên bản scan gốc và giữ ranh giới: AI chỉ trích xuất và cảnh báo cân đối, quyền quyết định phân loại cuối cùng thuộc về chuyên viên phân tích.
+**Nhóm đã sửa problem thế nào sau kiểm chứng:** Giữ lựa chọn 
 
 ### 3.3. Research giải pháp đã có
 
@@ -107,9 +108,10 @@ Các câu hỏi tham khảo theo *The Mom Test*:
 
 | Công cụ / pattern cần nghiên cứu | Link cần nhóm tự mở và kiểm | Bước có thể giải | Điểm cần thử | Khoảng trống cần kiểm chứng | Kết luận nghiên cứu |
 |---|---|---|---|---|---|
-| **Excel Power Query** | https://support.microsoft.com/vi-vn/office/nh%E1%BA%ADp-d%E1%BB%AF-li%E1%BB%87u-t%E1%BB%AB-t%E1%BA%ADp-tin-pdf-power-query-93b581e2-b05d-4a11-a8cf-ee4d093b13a8 (Kiểm tra ngày 09/11/2026) | Bước 3 & 4: Import bảng từ PDF số hóa dạng vector, làm sạch dữ liệu và tính toán đối ứng kế toán | Thử import tự động các file PDF có sẵn cấu trúc bảng tabular rõ ràng | Bất lực trước file scan dạng ảnh/dấu mộc mờ; gãy layout khi gặp ô gộp (merged cells); không hiểu ngữ nghĩa khi tên chỉ tiêu thay đổi | Chỉ phù hợp làm công cụ **Rule-based** kiểm tra logic và tính toán đối ứng sau khi đã có số liệu số hóa; không giải được bài toán trích xuất PDF scan |
-| **Python (pandas & pdfplumber / camelot)** | https://github.com/jsvine/pdfplumber (Kiểm tra ngày 09/11/2026) | Bước 3 & 4: Bóc tách text, tọa độ bảng biểu và chạy các rule kiểm tra cân đối kế toán tự động | Thử viết script trích xuất bảng từ file PDF text-based và ánh xạ theo regex dictionary | Chi phí bảo trì regex/parser rất lớn vì mỗi công ty trình bày bảng một kiểu; dễ nhầm cột khi khoảng cách cell không đều | Giải quyết tốt khâu kiểm tra ràng buộc kế toán (Rule check), nhưng không đủ linh hoạt để xử lý sự đa dạng ngữ nghĩa của BCTC |
-| **OCR & Document AI (LlamaParse / AWS Textract)** | https://llamaindex.ai/llamaparse (Kiểm tra ngày 09/11/2026) và https://aws.amazon.com/textract/ (Kiểm tra ngày 09/11/2026) | Bước 2, 3 & 4: OCR trích xuất bảng biểu từ ảnh scan, đọc hiểu ngữ cảnh và trả về Bounding Box tọa độ gốc | Thử parse các trang BCTC phức tạp có nhiều dòng gộp và ghi chú bên lề | Vẫn có rủi ro ảo giác (hallucination) ở con số nếu bản scan bị mờ; chi phí API; chưa tự động kiểm tra cân đối kế toán | **Mảnh ghép cốt lõi**: Cung cấp khả năng trích xuất bảng biểu và tọa độ Bounding Box để kết hợp với Rule kiểm tra và giao diện HITL duyệt |
+| Excel Power Query | [Nguồn chính thức + ngày kiểm] | Import, chuyển đổi bảng có cấu trúc | Định dạng và ánh xạ nhiều file | PDF không đồng nhất, bảng phức tạp | [ ] |
+| Python (pandas, công cụ trích bảng) | [Nguồn chính thức + ngày kiểm] | Chuẩn hóa, kiểm tra quy tắc | Tỷ lệ bao phủ các mẫu BCTC | Bảo trì parser | [ ] |
+| OCR / trích xuất tài liệu có cấu trúc | [Nguồn chính thức + ngày kiểm] | Đọc bảng từ PDF/scan | Độ chính xác số âm, đơn vị, dòng gộp | Rủi ro nhầm hàng/cột | [ ] |
+
 ---
 
 ## 4. Quy trình trước/sau (CP5) — GỢI Ý ĐỂ NHÓM TỰ KIỂM
@@ -118,26 +120,23 @@ Các câu hỏi tham khảo theo *The Mom Test*:
 
 ```mermaid
 flowchart TD
-    A["1. Xác định doanh nghiệp và 5–10 peer (60 phút)"] --> B["2. Thu thập file BCTC 5 năm (120 phút)"]
-    B --> C["3. Nhập số liệu thủ công từ PDF scan (480–600 phút) — BOTTLENECK 1"]
-    C --> D["4. Chuẩn hóa & ánh xạ tên chỉ tiêu (180–240 phút) — BOTTLENECK 2"]
-    D --> E["5. Đối chiếu số liệu với PDF nguồn gốc (90–120 phút)"]
-    E --> F["6. Bộ dữ liệu được chấp thuận đưa vào model xếp hạng (30 phút)"]
+    A["Xác định doanh nghiệp và peer"] --> B["Thu thập BCTC 5 năm"]
+    B --> C["Nhập số liệu thủ công — bottleneck"]
+    C --> D["Chuẩn hóa chỉ tiêu"]
+    D --> E["Đối chiếu với nguồn gốc"]
+    E --> F["Bộ dữ liệu được chấp thuận"]
 ```
 
-| Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú & Điểm nghẽn |
+| Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| **1** | Chuyên viên phân tích | Danh sách doanh nghiệp cần xếp hạng, mã ngành | Danh sách doanh nghiệp mục tiêu và 5–10 peer cùng ngành | 60 phút / hồ sơ | Lọc theo tiêu chí quy mô tài sản và lĩnh vực kinh doanh |
-| **2** | Chuyên viên phân tích | Danh sách doanh nghiệp và peer | Thư mục chứa 30–50 file PDF/scan BCTC qua 5 năm | 120 phút / hồ sơ | Tải từ website doanh nghiệp, cổng thông tin hoặc nhận bản scan từ khách hàng |
-| **3** | Chuyên viên phân tích | Các file PDF/scan BCTC 5 năm (nhiều bản scan mờ, nghiêng) | Bảng tính thô chứa toàn bộ số liệu 3 bảng chính (CĐKT, KQKD, LCTT) | **480–600 phút** (8–10 tiếng) | ⚠️ **BOTTLENECK CHÍNH 1:** Gõ tay từng số, dễ hoa mắt, nhầm lẫn số 0, lỗi lệch dòng do ô gộp (merged cells) |
-| **4** | Chuyên viên phân tích | Bảng tính thô vừa nhập | Bộ chỉ tiêu tài chính đã ánh xạ theo biểu mẫu chuẩn nội bộ | **180–240 phút** (3–4 tiếng) | ⚠️ **BOTTLENECK 2:** Tên gọi chỉ tiêu giữa các DN không thống nhất; phải đọc thuyết minh để biết khoản mục thuộc chỉ tiêu nào |
-| **5** | Chuyên viên / Người rà soát | Bảng dữ liệu chuẩn hóa và file BCTC PDF gốc | Danh sách sai lệch đã chỉnh sửa; bộ dữ liệu được phê duyệt | 90–120 phút (1.5–2 tiếng) | Mở song song 2 màn hình để soi từng con số; chạy công thức kiểm tra phương trình kế toán (Tài sản = Nguồn vốn) |
-| **6** | Chuyên viên phân tích | Dữ liệu đã phê duyệt | Bộ dữ liệu sạch sẵn sàng nạp vào model chấm điểm tín nhiệm | 30 phút / hồ sơ | Lưu vết kiểm toán (audit trail) phục vụ giải trình nội bộ và Hội đồng thẩm định |
+| 1 | Chuyên viên | Danh sách doanh nghiệp cần xếp hạng | Danh sách 5–10 peer | [Cần đo] | Có thể khác theo ngành |
+| 2 | Chuyên viên | Danh sách doanh nghiệp | BCTC 5 năm | [Cần đo] | Kiểm tra phiên bản, kỳ, hợp nhất/riêng |
+| 3 | Chuyên viên | BCTC nguồn | Bảng nhập liệu | [Cần đo] | **Bottleneck theo kinh nghiệm anh Quân** |
+| 4 | Chuyên viên | Bảng nhập liệu | Bộ chỉ tiêu chuẩn hóa | [Cần đo] | Kiểm tra đơn vị, định nghĩa |
+| 5 | Chuyên viên/rà soát | Bảng dữ liệu, BCTC | Danh sách sai lệch và dữ liệu được duyệt | [Cần đo] | Kiểm soát nguồn |
+| 6 | Chuyên viên | Dữ liệu đã duyệt | Bộ dữ liệu sẵn sàng phân tích | [Cần đo] | Lưu dấu vết |
 
-**Tổng kết Baseline hiện tại:**
-- **Tổng thời gian quy trình:** Khoảng **960–1170 phút (tương đương 16–19.5 giờ làm việc, mất 1.5–2 ngày làm việc)** cho một hồ sơ thẩm định.
-- **Tỷ lệ thủ công:** **6/6 bước (100% thủ công)**.
-- **Bước nghẽn trọng tâm:** Bước 3 (Nhập số liệu thủ công) và Bước 4 (Chuẩn hóa chỉ tiêu) chiếm hơn **75% tổng thời gian** toàn bộ quy trình và là nguồn cơn phát sinh lỗi sai lệch số liệu.
+**Baseline đã cung cấp:** khoảng 1–2 ngày làm việc cho việc nhập/chuẩn hóa BCTC. Chưa có đo thời gian từng bước và chưa chốt cách tính thời gian chờ.
 
 ### 4.2. Quy trình tương lai — hai phương án để đánh giá
 
@@ -151,14 +150,6 @@ flowchart TD
     E -->|Không đạt| G["Nhập/sửa thủ công từ BCTC"]
     G --> D
 ```
-| Bước | Actor / Thành phần | Phương thức xử lý | Input | Output | Thời gian ước tính |
-|---:|---|---|---|---|---|
-| **1** | Chuyên viên phân tích | **Thủ công** | Danh sách DN và peer | Thư mục file PDF scan đã lưu nguồn chuẩn | 30 phút |
-| **2** | Document AI (LlamaParse/Textract) | **AI (Trích xuất)** | File PDF scan/ảnh | Dữ liệu bảng biểu dạng JSON kèm tọa độ Bounding Box từng ô | 5–10 phút |
-| **3** | LLM Engine | **AI (Ánh xạ ngữ nghĩa)** | Dữ liệu bảng thô + Từ điển mẫu nội bộ | Bảng chỉ tiêu tài chính đã map vào mẫu chuẩn 5 năm | 5–10 phút |
-| **4** | Rule Engine (Python/SQL) | **Rule (Kiểm soát cứng)** | Bảng chỉ tiêu tài chính vừa map | Báo cáo đối ứng: Kiểm tra cân đối kế toán (TS = Nợ + VCSH), gắn cờ cảnh báo | 2 phút |
-| **5** | Chuyên viên phân tích | **Con người (HITL)** | Bảng dữ liệu + PDF gốc có highlight | Danh sách ô ngoại lệ được xác nhận; chỉnh sửa nếu AI nhận diện nhầm | 45–60 phút |
-| **6** | Chuyên viên / Lãnh đạo | **Con người phê duyệt** | Dữ liệu đã sạch 100% | Bộ dữ liệu chính thức nạp vào hệ thống chấm điểm tín nhiệm | 15 phút |    
 
 **Phương án A — Rule trước:** sử dụng dữ liệu có cấu trúc, Power Query/Python, bộ ánh xạ và đối chiếu số học; người dùng duyệt.
 
@@ -170,11 +161,11 @@ flowchart TD
 
 | Chỉ số | Trước | Sau (giả thuyết, chưa đo) | Cách kiểm |
 |---|---|---|---|
-| **Tổng thời gian** | 16–19.5 giờ (1–2 ngày làm việc) | 100–130 phút (mục tiêu ≤ 4 giờ) | Bấm giờ thực tế trên cùng một bộ hồ sơ mẫu (1 DN mục tiêu + 5 peer) |
-| **Tỷ lệ chỉ tiêu đúng** | ~90–92% (hay sai sót do gõ nhầm số, sót dòng) | ≥ 98% (kết hợp AI OCR + Rule đối ứng kế toán chặn lỗi) | Đối chiếu chéo 100% chỉ tiêu với bản scan BCTC gốc qua Bounding Box |
-| **Số bước thủ công** | 6/6 bước thủ công (100%) | 2/6 bước (chỉ còn khâu nạp file và chuyên viên rà soát duyệt) | Nhật ký thao tác (Audit log) của hệ thống |
-| **Bottleneck** | Nhập số liệu tay (Bước 3) & Chuẩn hóa chỉ tiêu (Bước 4) | Chuyên viên rà soát ngoại lệ và đối soát Bounding Box (Bước 5) | Quan sát và đo thời gian thao tác của chuyên viên trong giai đoạn pilot (Điểm nghẽn mới chấp nhận được vì là khâu kiểm soát chất lượng) |
-| **Rủi ro mới** | Sai sót nhập tay, hoa mắt khi gần deadline | AI ảo giác số liệu khi bản scan mờ; chuyên viên tự tin quá mức bỏ qua khâu kiểm | Kiểm tra tỷ lệ ngoại lệ bị Rule chặn lại; bắt buộc chuyên viên xác nhận Bounding Box trước khi bấm Approve |
+| Tổng thời gian | 1–2 ngày | Mục tiêu thử nghiệm ≤4 giờ | Đo cùng phạm vi dữ liệu trước/sau |
+| Tỷ lệ chỉ tiêu đúng | [Chưa đo] | Không thấp hơn baseline | Đối chiếu từng chỉ tiêu với BCTC gốc |
+| Số bước thủ công | [Cần đếm] | [Cần pilot] | Nhật ký thao tác |
+| Bottleneck | Nhập dữ liệu | Có thể chuyển sang kiểm tra ngoại lệ | Quan sát pilot |
+| Rủi ro mới | Sai sót nhập tay | Sai ánh xạ/OCR, tự tin quá mức | Tỷ lệ ngoại lệ, dấu vết nguồn |
 
 ---
 
