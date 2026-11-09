@@ -27,7 +27,9 @@
 | 7 | Đoàn Nhật Anh | Khi làm bài có công cụ hỗ trợ, muốn biết phần kiến thức có thể tự giải thích và vận dụng để thực sự nắm bài |Sinh viên |Tự nhận diện phần chưa hiểu sau khi hoàn thành bài |Thành viên nhóm (Lê Hoàng Quân): Làm thế nào để xác định sinh viên thực sự chưa hiểu kiến thức, thay vì chỉ chưa nhớ cách diễn đạt? Có thể dùng bài kiểm tra hoặc yêu cầu tự giải thích để đo mức độ hiểu không? |
 | 8 | Đoàn Nhật Anh | Khi nhận code tạo tự động, muốn phát hiện lỗi và ảnh hưởng tương thích trước khi tích hợp |Người học/lập trình viên |Rà logic và phụ thuộc trong ngữ cảnh code |Thành viên nhóm (Đỗ văn ngọc): “Có thể giải thích rõ hơn vấn đề #2 không?”  |
 | 9 | Đoàn Nhật Anh | Khi chuẩn bị đăng quảng cáo, muốn đối chiếu nội dung với thông tin sản phẩm để tránh gây hiểu nhầm |Người bán online/người phụ trách quảng cáo |Đối chiếu mô tả, hình ảnh và giá |Thành viên nhóm (Nguyễn thế trường): Người bán thường phát hiện nội dung quảng cáo sai lệch bằng cách nào? Những sai lệch nào dễ xảy ra nhất: mô tả sản phẩm, hình ảnh hay giá bán? |
-| 4–12 | **[Các thành viên khác điền]** | **[Candidate đã pitch]** | | | |
+| 10 | Đỗ Văn Ngọc | Khi chuẩn bị dữ liệu huấn luyện, tôi muốn phát hiện bản ghi lỗi để tránh gián đoạn pipeline |AI Engineer, Data Engineer |Kiểm tra dữ liệu thủ công; cần đo thời gian. |Có thể dùng schema hoặc rule để phát hiện lỗi không |
+|11|Đỗ Văn Ngọc|Khi bàn giao dữ liệu/dịch vụ bị chậm, tôi muốn tìm bước tắc để điều chỉnh tiến độ|AI Engineer, Data/Platform Engineer|Chưa rõ nguyên nhân và bước gây chậm|Lần gần nhất bị trễ, nguyên nhân là g|
+|12|Đỗ Văn Ngọc |Khi sắp đến hạn nộp bài, tôi muốn rà soát lỗi và mục thiếu để nộp đúng yêu cầu|Học viên|Đối chiếu bài với đề và checklist; cần đo thời gian|Lần gần nhất mất bao lâu và có bỏ sót lỗi nào không?|
 
 ### 2.2. Cluster
 
@@ -58,15 +60,15 @@ Những ý là *solution* cần tách khỏi opportunity: “xây chatbot”, �
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được 4 mức | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Nhập và chuẩn hóa BCTC | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Đối chiếu số liệu | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Tổng hợp thông tin đa nguồn | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Nhập và chuẩn hóa BCTC | 5 | 5 | 5 | 4 | 5 | 5 | 4 | 33 |
+| Đối chiếu số liệu | 5 | 5 | 5 | 4 | 5 | 3 | 5 | 32 |
+| Tổng hợp thông tin đa nguồn | 3 | 3 | 4 | 3 | 4 | 3 | 4 | 25 |
 
 **Candidate được chọn theo thông tin anh Quân cung cấp:** Nhập và chuẩn hóa BCTC của doanh nghiệp và peer.
 
 **Lý do đề xuất:** Công việc lặp lại; bottleneck nhập tay rõ; baseline tự báo cáo khoảng 1–2 ngày; có thể đo thời gian và sai lệch trên một bộ dữ liệu mẫu. **Cần nhóm xác nhận cách chấm và lý do loại ít nhất hai candidate còn lại.**
 
-**Xử lý bất đồng:** [Nhóm ghi trung thực; nếu không có bất đồng, ghi rõ cách đạt đồng thuận.]
+**Xử lý bất đồng:** Nhóm đồng thuận lựa chọn vấn đề này bởi vì đây là 1 vấn đề thực tế
 
 ---
 
@@ -108,9 +110,9 @@ Các câu hỏi tham khảo theo *The Mom Test*:
 
 | Công cụ / pattern cần nghiên cứu | Link cần nhóm tự mở và kiểm | Bước có thể giải | Điểm cần thử | Khoảng trống cần kiểm chứng | Kết luận nghiên cứu |
 |---|---|---|---|---|---|
-| Excel Power Query | [Nguồn chính thức + ngày kiểm] | Import, chuyển đổi bảng có cấu trúc | Định dạng và ánh xạ nhiều file | PDF không đồng nhất, bảng phức tạp | [ ] |
-| Python (pandas, công cụ trích bảng) | [Nguồn chính thức + ngày kiểm] | Chuẩn hóa, kiểm tra quy tắc | Tỷ lệ bao phủ các mẫu BCTC | Bảo trì parser | [ ] |
-| OCR / trích xuất tài liệu có cấu trúc | [Nguồn chính thức + ngày kiểm] | Đọc bảng từ PDF/scan | Độ chính xác số âm, đơn vị, dòng gộp | Rủi ro nhầm hàng/cột | [ ] |
+| Excel Power Query | [Nguồn chính thức + ngày kiểm] | Import, chuyển đổi bảng có cấu trúc | Định dạng và ánh xạ nhiều file | PDF không đồng nhất, bảng phức tạp | Không lựa chọn phương án này |
+| Python (pandas, công cụ trích bảng) | [Nguồn chính thức + ngày kiểm] | Chuẩn hóa, kiểm tra quy tắc | Tỷ lệ bao phủ các mẫu BCTC | Bảo trì parser | Chưa hợp lý |
+| OCR / trích xuất tài liệu có cấu trúc | [Nguồn chính thức + ngày kiểm] | Đọc bảng từ PDF/scan | Độ chính xác số âm, đơn vị, dòng gộp | Rủi ro nhầm hàng/cột | Lựa chọn |
 
 ---
 
@@ -129,12 +131,12 @@ flowchart TD
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | Chuyên viên | Danh sách doanh nghiệp cần xếp hạng | Danh sách 5–10 peer | [Cần đo] | Có thể khác theo ngành |
-| 2 | Chuyên viên | Danh sách doanh nghiệp | BCTC 5 năm | [Cần đo] | Kiểm tra phiên bản, kỳ, hợp nhất/riêng |
-| 3 | Chuyên viên | BCTC nguồn | Bảng nhập liệu | [Cần đo] | **Bottleneck theo kinh nghiệm anh Quân** |
-| 4 | Chuyên viên | Bảng nhập liệu | Bộ chỉ tiêu chuẩn hóa | [Cần đo] | Kiểm tra đơn vị, định nghĩa |
-| 5 | Chuyên viên/rà soát | Bảng dữ liệu, BCTC | Danh sách sai lệch và dữ liệu được duyệt | [Cần đo] | Kiểm soát nguồn |
-| 6 | Chuyên viên | Dữ liệu đã duyệt | Bộ dữ liệu sẵn sàng phân tích | [Cần đo] | Lưu dấu vết |
+| 1 | Chuyên viên | Danh sách doanh nghiệp cần xếp hạng | Danh sách 5–10 peer | 2 tháng | Có thể khác theo ngành |
+| 2 | Chuyên viên | Danh sách doanh nghiệp | BCTC 5 năm | 5 năm | Kiểm tra phiên bản, kỳ, hợp nhất/riêng |
+| 3 | Chuyên viên | BCTC nguồn | Bảng nhập liệu | 3-4 ngày | **Bottleneck theo kinh nghiệm anh Quân** |
+| 4 | Chuyên viên | Bảng nhập liệu | Bộ chỉ tiêu chuẩn hóa | 1 ngày | Kiểm tra đơn vị, định nghĩa |
+| 5 | Chuyên viên/rà soát | Bảng dữ liệu, BCTC | Danh sách sai lệch và dữ liệu được duyệt | 2 ngày | Kiểm soát nguồn |
+| 6 | Chuyên viên | Dữ liệu đã duyệt | Bộ dữ liệu sẵn sàng phân tích | 1 tuần | Lưu dấu vết |
 
 **Baseline đã cung cấp:** khoảng 1–2 ngày làm việc cho việc nhập/chuẩn hóa BCTC. Chưa có đo thời gian từng bước và chưa chốt cách tính thời gian chờ.
 
