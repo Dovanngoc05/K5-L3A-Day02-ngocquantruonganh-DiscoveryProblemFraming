@@ -145,16 +145,15 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card |Nhập BCTC 5 năm của doanh nghiệp cùng 5–10 peer mất 1–2 ngày.| Nhóm đồng ý |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Một số bạn đưa ra vấn đề quá chung chung, bạn cần đi vào chi tiết 1 công việc cụ thể | Nhóm nhất trí với tôi|
+| Nhận phản biện | Anh chưa ghi rõ khoảng thời gian cần thiết cho mỗi bước | Tôi đã bổ sung thông tin này |
+| Chọn candidate problem | Ưu tiên các vấn đề cụ thể, trong công viêc thực tế hàng ngày| Nhóm đã nhất trí chọn vấn đề: Khi thực hiện phân tích tín nhiệm lần đầu hoặc định kỳ, tôi muốn thu thập và chuẩn hóa BCTC 5 năm của doanh nghiệp và các peer, để bảo đảm dữ liệu đầu vào nhất quán, đầy đủ và có thể so sánh |
+| Kiểm chứng / research | Tôi kể cho các thành viên trải nghiệm thực tế trong công việc của mình | Tôi cho các thành viên trong nhóm xem 1 ví dụ về báo cáo xếp hạng tín nhiệm |
+| Quy trình nhóm | Tôi đã đốc thúc các thành viên nhanh chóng thực hiện bài tập theo hướng dẫn và đúng tiến độ thầy giáo đề ra | Các thành viên đã nhất trí và cố gắng hoàn thiện nhanh hơn phần của mình |
+| Problem Statement | Tôi đề xuất trưởng nhóm, sau đó đề xuất chọn Problem | Nhóm đã nhất trí với tôi. |
+| Mức can thiệp AI | Tôi đánh giá phương án dùng Agent là tốt nhất | Nhóm đồng ý với tôi |
+| Quyết định | Các tiêu Value, Usability, Feasibility và Viability đều ở mức chấp nhận được | Go |
 
 ---
 
