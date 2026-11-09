@@ -161,12 +161,12 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| **CP1 Scan** | Hỏi AI gợi ý thêm các pain points thường gặp của sinh viên ngành công nghệ thông tin / khoa học dữ liệu. | Gợi ý được ý tưởng về xung đột môi trường CUDA/PyTorch và khó khăn khi lội tìm tin nhắn giải đáp trên kênh chat. | Gợi ý nhiều ý tưởng viển vông, chung chung kiểu "AI trợ lý học tập toàn năng" không có quy trình thực tế. | Gạt bỏ các ý tưởng mơ hồ, chỉ giữ lại các pain point có số liệu bấm giờ thật của bản thân (mất 20–30 phút setup môi trường, rà format file nộp bài). |
+| **CP2 Problem Card** | Nhờ AI đóng vai Product Manager hoài nghi để phản biện Card #1 (Checklist format bài nộp lab). | Chỉ ra điểm yếu chí mạng: Linter chỉ kiểm tra được sự tồn tại của file chứ không đọc hiểu được chất lượng nội dung báo cáo có đạt rubric không. | AI đề xuất giải pháp dùng LLM Agent tự động phân tích và sửa bài lab — đây là giải pháp quá mức cần thiết (overkill). | Sửa lại: Hạ mức can thiệp xuống Rule-based linter, AI chỉ đóng vai trò hỗ trợ đọc lướt cảnh báo để con người tự kiểm soát (HITL). |
+| **CP4 Research** | Nhờ AI tìm kiếm các thư viện và giải pháp bóc tách bảng biểu từ tài liệu tài chính. | Cung cấp danh mục các công cụ thực tế như pdfplumber, AWS Textract và LlamaParse kèm tài liệu kỹ thuật. | AI khẳng định "các mô hình Vision-LLM hiện nay đọc bảng BCTC chính xác 99% không cần người duyệt" — hoàn toàn sai thực tế khi gặp bản scan nghiêng, mờ hoặc merged cells. | Đối chiếu tài liệu kỹ thuật và kết quả phỏng vấn chuyên gia, bổ sung bắt buộc tính năng Bounding Box đối soát nguồn và Rule check đối ứng kế toán. |
+| **CP5 Quy trình** | Nhờ AI format sơ đồ Mermaid và tính toán phân bổ thời gian quy trình tương lai. | Dựng cú pháp Mermaid nhanh, tính toán phân bổ thời gian trực quan logic. | AI ban đầu tự ý bỏ bước Human-in-the-loop (con người duyệt) để quy trình "tự động hóa 100%". | Bổ sung bắt buộc bước chuyên viên rà soát ngoại lệ (45–60 phút) và thiết kế nhánh rẽ Fallback nhập tay khi AI trích xuất sai. |
+| **CP5–6 Problem Statement** | Nhờ AI rà soát lỗi logic trong 6 trường của Problem Statement v0. | Phát hiện từ ngữ ở mục Metric còn hơi định tính (chưa nêu rõ cách đo độ chính xác số học). | AI tự ý sửa trường Boundary thành "AI tự động chấm điểm xếp hạng tín nhiệm nếu độ tin cậy cao", vi phạm nghiêm trọng quy định an toàn tài chính. | Xóa bỏ đề xuất đó, khóa cứng Boundary: AI chỉ trích xuất dữ liệu, chuyên viên và hội đồng rủi ro là người duy nhất ra quyết định xếp hạng. |
+| **CP6 Mức can thiệp / quyết định** | Nhờ AI so sánh giữa giải pháp Workflow và Agent tự trị cho bài toán BCTC. | Liệt kê được các ưu/nhược điểm kỹ thuật về chi phí và độ phức tạp. | AI thiên vị việc dùng Autonomous Agent để "thể hiện tính hiện đại và thông minh". | Giữ vững lập luận: Tài chính là lĩnh vực không chấp nhận ảo giác, chọn Workflow (AI trích xuất + Rule kế toán + Con người duyệt) là giải pháp tối ưu và an toàn nhất. |
 
 ---
 
@@ -176,17 +176,36 @@ Trực tiếp điền trải nghiệm thật của bản thân sau khi hoàn th�
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Khi nghe anh Quân pitch về bài toán thu thập và chuẩn hóa BCTC 5 năm của doanh nghiệp và peer phục vụ phân tích xếp hạng tín nhiệm, tôi thực sự được mở rộng tầm mắt về một bài toán nghiệp vụ thực tế ngoài doanh nghiệp. Trước đây khi nghĩ về problem, tôi chỉ quanh quẩn với các bài toán học tập của sinh viên như check lỗi format bài lab hay sửa lỗi xung đột CUDA. Bài toán của anh Quân cho tôi thấy một nỗi đau vô cùng lớn: một chuyên viên phân tích tín nhiệm phải mất 1.5–2 ngày chỉ để gõ tay từng con số từ các bản scan méo mó vào bảng tính Excel. Điều này giúp tôi hiểu rằng một bài toán AI có giá trị cao không phải là bài toán dùng công nghệ phức tạp nhất, mà là bài toán tháo gỡ được đúng điểm nghẽn tốn thời gian nhất và tạo ra tác động đo lường được trực tiếp bằng tiền bạc và công sức của doanh nghiệp.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Nhóm tôi bị vấp phải bẫy "solution-first" ngay từ lúc bắt đầu CP3. Khi anh Quân vừa nêu ra nỗi đau nhập liệu BCTC, cả nhóm đã hào hứng đề xuất ngay: *"Hay là mình xây một con AI Agent tự động đọc PDF rồi xuất báo cáo xếp hạng luôn?"* hoặc *"Dùng mô hình OCR Deep Learning mới nhất"*. Lúc đó, khi nhìn vào yêu cầu của cây Opportunity Solution Tree (OST) và lời nhắc của rubric: *"Cây OST các nhánh chỉ là pain, tuyệt đối không có tên công cụ hay tính năng"*, cả nhóm mới giật mình nhận ra mình đang nhầm lẫn tai hại giữa Opportunity (nhu cầu/nỗi đau) và Solution (giải pháp). Nhóm đã lập tức dừng lại, gạch bỏ toàn bộ các từ khóa công nghệ như "Agent", "Chatbot", "OCR" ra khỏi cây OST và chỉ tập trung mô tả đúng 3 nỗi đau gốc: mất thời gian nhập tay, mất thời gian đối chiếu và phân tán nguồn tin.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Tôi đã đổi ý 180 độ ở chính Problem Card #1 của mình (Kiểm tra checklist format bài nộp lab). Ban đầu, tôi rất tự tin với bài này và muốn chọn làm đề tài nhóm vì nghĩ rằng có thể ứng dụng LLM để đọc hiểu bài nộp. Tuy nhiên, khi anh Quân và bạn Ánh phản biện: *"Nếu chỉ kiểm tra tên file, thư mục và các thẻ heading markdown thì một đoạn bash script hoặc python regex linter chạy mất 2 giây là xong, việc gì phải tốn tiền gọi API AI?"*, tôi đã sững người và nhận ra mình đang cố tình "nhét AI" vào một bài toán mà Rule-based truyền thống giải quyết tốt hơn gấp trăm lần. Tôi đã thẳng thắn thừa nhận phản biện này, hạ mức can thiệp của bài mình xuống mức Rule, và hoàn toàn ủng hộ nhóm chọn đề tài BCTC của anh Quân vì đó mới thực sự là bài toán cần đến AI để xử lý tính đa dạng và phi cấu trúc của ngôn ngữ.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Kết quả kiểm chứng phỏng vấn các chuyên viên tài chính làm tôi bất ngờ nhất ở **tín hiệu phản bác**: Các chuyên viên hoàn toàn không hào hứng với một hệ thống "AI tự động hóa hoàn toàn". Họ nói thẳng: *"Nếu AI nhả ra một bảng Excel số liệu sạch bong mà không chỉ rõ con số đó nằm ở dòng nào, trang nào trên file scan gốc thì tôi vứt đi, không dám dùng"*. Tôi vốn nghĩ người dùng chỉ quan tâm đến kết quả cuối cùng nhanh hay chậm, nhưng trong ngành tài chính và thẩm định tín dụng, **tính minh bạch và khả năng truy vết nguồn gốc (Bounding Box Traceability)** còn quan trọng hơn tốc độ. Phát hiện này đã thay đổi hoàn toàn cách nhóm tôi thiết kế quy trình tương lai ở CP5: bắt buộc phải có giao diện highlight đối soát nguồn để con người bấm duyệt.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điều khó nhất với tôi và cả nhóm là viết trường **Success Metric** và trường **Boundary**. Với Success Metric, lúc đầu nhóm rất hay quen tay viết chung chung kiểu "giúp quy trình nhanh hơn", "giảm thiểu sai sót". Khi bị ép phải có baseline đo bằng số phút thật và target cụ thể, nhóm phải ngồi tính toán chi tiết từng bước: giảm từ 16–19.5 giờ xuống dưới 4 giờ, tỷ lệ khớp đúng số liệu trên 98%. Còn với trường Boundary, cái khó là phải dũng cảm vạch ra giới hạn: chỉ rõ AI **KHÔNG** được làm gì (không tự suy đoán số thiếu, không tự xếp hạng), buộc con người phải giữ vai trò chốt chặn cuối cùng (HITL), tránh ảo tưởng biến hệ thống thành một cỗ máy tự trị nguy hiểm.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu làm lại từ đầu, tôi sẽ thúc đẩy nhóm tiến hành phỏng vấn người dùng thật sớm hơn nữa, ngay từ cuối CP2 thay vì đợi đến CP4. Khi có tiếng nói thực tế của người trong ngành sớm, nhóm sẽ tiết kiệm được rất nhiều thời gian tranh luận viển vông về các tính năng giải pháp. Ngoài ra, tôi sẽ phản biện nhóm quyết liệt hơn ở khâu quy định ranh giới cho dữ liệu phần Thuyết minh BCTC: cần giới hạn chặt chẽ hơn nữa phạm vi trích xuất ở giai đoạn đầu, chỉ tập trung vào 3 bảng chính (Cân đối kế toán, Kết quả kinh doanh, Lưu chuyển tiền tệ), tạm thời loại bỏ hoàn toàn phần Thuyết minh phức tạp ra khỏi phạm vi pilot để tránh rủi ro tràn lan phạm vi (scope creep).
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+1. **Problem:** Chuyên viên phân tích tín nhiệm mất 1.5–2 ngày làm việc thủ công mệt mỏi để bóc tách và chuẩn hóa số liệu BCTC 5 năm từ các file PDF scan phi cấu trúc của doanh nghiệp và peer, dễ sai lệch số liệu kế toán.
+2. **Quy trình:** Nhóm thiết kế lại quy trình thành 6 bước bán tự động: Document AI trích xuất bảng biểu kèm tọa độ Bounding Box, LLM ánh xạ ngữ nghĩa chỉ tiêu vào mẫu chuẩn 5 năm, Rule Engine kiểm tra đối ứng kế toán (Tài sản = Nguồn vốn), và chuyên viên rà soát ngoại lệ qua màn hình highlight trực tiếp trên PDF gốc (Human-in-the-loop).
+3. **Metric:** Lượng hóa thành công bằng việc giảm tổng thời gian xử lý từ 16–19.5 giờ xuống dưới 4 giờ (kỳ vọng 100–130 phút) và nâng tỷ lệ khớp đúng số liệu kế toán đạt trên 98%.
+4. **Boundary:** Ranh giới an toàn được khóa chặt: AI tuyệt đối không tự sửa số liệu gốc, không tự bịa số liệu thiếu và không tự động đưa ra kết luận xếp hạng tín nhiệm thay con người.
+5. **Mức can thiệp AI:** Nhóm chọn mức **Workflow (kết hợp AI trích xuất ngữ nghĩa + Rule kiểm soát cân đối kế toán + Con người duyệt)**; kiên quyết không dùng Autonomous Agent vì rủi ro ảo giác tài chính và không dùng Pure Rule vì rule sẽ gãy hoàn toàn trước sự đa dạng của biểu mẫu BCTC scan.
+6. **Quyết định:** Nhóm thống nhất ra quyết định **Go có điều kiện trong phạm vi pilot nhỏ (50 bộ hồ sơ BCTC)**, đi kèm ngưỡng dừng nghiêm ngặt: nếu tỷ lệ sai lệch số học vượt quá 5% hoặc chuyên viên phải sửa tay trên 30% chỉ tiêu thì lập tức dừng pilot để hiệu chỉnh lại hệ thống.
 
 ---
 
