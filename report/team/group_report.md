@@ -70,12 +70,12 @@ Những ý là *solution* cần tách khỏi opportunity: “xây chatbot”, �
 
 | # | Giả định cần kiểm chứng | Loại | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | Nhập BCTC là công đoạn tốn thời gian nhất | Value | [ ] | [ ] | Có |
-| 2 | Quy trình có thể rút ngắn mà vẫn giữ độ chính xác | Value | [ ] | [ ] | Có |
-| 3 | BCTC của doanh nghiệp và 5–10 peer có thể thu thập hợp lệ, đủ 5 năm | Feasibility | [ ] | [ ] | Có |
-| 4 | Một bộ ánh xạ chỉ tiêu có thể xử lý sự khác nhau giữa ngành và biểu mẫu | Feasibility | [ ] | [ ] | Có |
-| 5 | Chuyên viên có thể rà soát và sửa lỗi từ hệ thống hỗ trợ | Usability | [ ] | [ ] | Có |
-| 6 | Thời gian tiết kiệm lớn hơn chi phí triển khai, vận hành và kiểm soát | Viability | [ ] | [ ] | Có |
+| 1 | Nhập BCTC là công đoạn tốn thời gian nhất | Value | 5 | 5 | Có |
+| 2 | Quy trình có thể rút ngắn mà vẫn giữ độ chính xác | Value | 5 | 3 | Có |
+| 3 | BCTC của doanh nghiệp và 5–10 peer có thể thu thập hợp lệ, đủ 5 năm | Feasibility | 5 | 5 | Có |
+| 4 | Một bộ ánh xạ chỉ tiêu có thể xử lý sự khác nhau giữa ngành và biểu mẫu | Feasibility | 4 | 4 | Có |
+| 5 | Chuyên viên có thể rà soát và sửa lỗi từ hệ thống hỗ trợ | Usability | 5 | 5 | Có |
+| 6 | Thời gian tiết kiệm lớn hơn chi phí triển khai, vận hành và kiểm soát | Viability | 5 | 3 | Có |
 
 ### 3.2. Kiểm chứng bằng người thật
 
@@ -90,11 +90,10 @@ Các câu hỏi tham khảo theo *The Mom Test*:
 
 | Người được hỏi (vai trò, không ghi tên) | Thời điểm, phương pháp | Hành vi thực tế và thời gian | Workaround | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---|---|---|---|---|
-| [Người 1] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| [Người 2] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| [Người 3, nếu có] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| [Người 1] | Nhập dữ liệu thủ công | 1-2 ngày |  |  Kết quả cải thiện khi dùng | Xác nhận đúng |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:** [Chỉ ghi sau khi có bằng chứng; kể cả trường hợp bằng chứng khiến nhóm phải đổi candidate hoặc bỏ AI.]
+
+**Nhóm đã sửa problem thế nào sau kiểm chứng:** Giữ lựa chọn 
 
 ### 3.3. Research giải pháp đã có
 
