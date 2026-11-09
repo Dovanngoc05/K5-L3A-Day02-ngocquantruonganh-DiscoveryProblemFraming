@@ -21,6 +21,9 @@
 | 1 | Lê Hoàng Quân | Khi phân tích tín nhiệm, tôi muốn có bộ BCTC 5 năm đã chuẩn hóa của doanh nghiệp và peer để phân tích nhất quán | Chuyên viên phân tích tín nhiệm | Nhập số liệu thủ công; toàn quy trình khoảng 1–2 ngày | **[Nhóm ghi câu hỏi thực tế và người hỏi]** |
 | 2 | Lê Hoàng Quân | Khi lập báo cáo, tôi muốn đối chiếu dữ liệu giữa BCTC, Excel và nội dung báo cáo để giảm sai lệch | Chuyên viên và người rà soát | Đối chiếu thủ công 1–3 giờ | **[Ghi câu hỏi thực tế]** |
 | 3 | Lê Hoàng Quân | Khi đánh giá doanh nghiệp, tôi muốn tổng hợp thông tin từ các nguồn khác nhau để có căn cứ nhận định | Chuyên viên phân tích | Tổng hợp nhiều nguồn 1–2 ngày | **[Ghi câu hỏi thực tế]** |
+| 4 | Nguyễn Thế Trường | Khi đến hạn nộp bài lab hàng tuần, tôi muốn đối chiếu toàn bộ checklist và cấu trúc file nộp, để không bị trừ điểm vì lỗi format ngớ ngẩn | Sinh viên thực hành lab | Rà soát thủ công từng file và mục báo cáo markdown (20–25 phút) | *"Nếu chỉ kiểm tra tên file và định dạng thì viết script regex/linter là xong, việc gì phải dùng AI?"* (Lê Hoàng Quân hỏi) |
+| 5 | Nguyễn Thế Trường | Khi ôn tập thi cuối kỳ, tôi muốn gom các câu hỏi và giải đáp của GV/TA trên Discord/Zalo, để ôn tập đúng trọng tâm mà không phải lội tin nhắn | Sinh viên chuẩn bị thi | Cuộn tìm tin nhắn và ghép cặp câu hỏi - lời giải đáp (60–75 phút) | *"Tin nhắn chat sinh viên viết tắt và ngắt quãng nhiều thì làm sao gom đúng ngữ cảnh?"* (Đỗ Văn Ngọc hỏi) |
+| 6 | Nguyễn Thế Trường | Khi thực hành AI mới, tôi muốn tự động sửa các lỗi xung đột giữa PyTorch, CUDA và NVIDIA driver, để chạy code mẫu không mất cả buổi | Sinh viên học AI/Deep Learning | Tìm cách fix trên StackOverflow và gỡ cài lại nhiều lần (35–45 phút) | *"Mỗi máy một cấu hình card và OS khác nhau, tra cứu rule matrix có đủ không hay cần AI?"* (Đoàn Nhật Ánh hỏi) |
 | 4–12 | **[Các thành viên khác điền]** | **[Candidate đã pitch]** | | | |
 
 ### 2.2. Cluster
