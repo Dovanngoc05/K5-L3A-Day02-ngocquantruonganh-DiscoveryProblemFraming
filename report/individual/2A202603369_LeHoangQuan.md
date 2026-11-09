@@ -137,45 +137,48 @@ flowchart TD
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: 1
+- Vì sao: Đây là vấn đề lặp lại trong hoạt động phân tích tín nhiệm, có thời gian xử lý thực tế khoảng 1–2 ngày, ảnh hưởng trực tiếp đến tiến độ và chất lượng dữ liệu đầu vào. Bài toán có thể kiểm chứng bằng cách đo thời gian xử lý và đối chiếu độ chính xác của bộ dữ liệu sau chuẩn hóa.
+- Câu hỏi muốn nhóm phản biện: Với các BCTC có biểu mẫu và cách trình bày khác nhau, liệu các công cụ dựa trên quy tắc như Excel hoặc Power Query đã đủ giải quyết vấn đề, hay cần kết hợp AI để trích xuất và chuẩn hóa dữ liệu?
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
-|---|---|---|
-| | | |
-
+|Chưa phân tách thời gian từng bước|Đồng ý|	Ghi rõ thời gian cho mỗi bước của cả 3 quy trình|
+|Chưa rõ mức cần thiết của AI | Đồng ý| Kiểm tra Excel, Power Query và Rule trước|
+|Phạm vi peer có thể quá rộng | Đồng ý| Xác định số peer fix là 10 doanh nghiệp|
 ---
+
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card |Nhập BCTC 5 năm của doanh nghiệp cùng 5–10 peer mất 1–2 ngày.| Nhóm đồng ý |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Một số bạn đưa ra vấn đề quá chung chung, bạn cần đi vào chi tiết 1 công việc cụ thể | Nhóm nhất trí với tôi|
+| Nhận phản biện | Anh chưa ghi rõ khoảng thời gian cần thiết cho mỗi bước | Tôi đã bổ sung thông tin này |
+| Chọn candidate problem | Ưu tiên các vấn đề cụ thể, trong công viêc thực tế hàng ngày| Nhóm đã nhất trí chọn vấn đề: Khi thực hiện phân tích tín nhiệm lần đầu hoặc định kỳ, tôi muốn thu thập và chuẩn hóa BCTC 5 năm của doanh nghiệp và các peer, để bảo đảm dữ liệu đầu vào nhất quán, đầy đủ và có thể so sánh |
+| Kiểm chứng / research | Tôi kể cho các thành viên trải nghiệm thực tế trong công việc của mình | Tôi cho các thành viên trong nhóm xem 1 ví dụ về báo cáo xếp hạng tín nhiệm |
+| Quy trình nhóm | Tôi đã đốc thúc các thành viên nhanh chóng thực hiện bài tập theo hướng dẫn và đúng tiến độ thầy giáo đề ra | Các thành viên đã nhất trí và cố gắng hoàn thiện nhanh hơn phần của mình |
+| Problem Statement | Tôi đề xuất trưởng nhóm, sau đó đề xuất chọn Problem | Nhóm đã nhất trí với tôi. |
+| Mức can thiệp AI | Tôi đánh giá phương án dùng Agent là tốt nhất | Nhóm đồng ý với tôi |
+| Quyết định | Các tiêu Value, Usability, Feasibility và Viability đều ở mức chấp nhận được | Go |
+
 
 ---
+
 
 ## 5. Dùng AI
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Sử dụng ChatGPT để gợi ý và hệ thống hóa các vấn đề thực tế trong hoạt động phân tích và xếp hạng tín nhiệm doanh nghiệp. | AI giúp mở rộng các góc nhìn về công việc lặp lại, tốn thời gian, tổng hợp thông tin và khó khăn của người sử dụng báo cáo. | Các gợi ý ban đầu mang tính khái quát, chưa phản ánh đầy đủ đặc thù nghiệp vụ và thiếu bằng chứng định lượng. | Tôi lựa chọn 7 vấn đề phù hợp với công việc thực tế, bổ sung thời gian và tần suất xử lý: nhập BCTC 1–2 ngày, đối chiếu số liệu 1–3 giờ, tổng hợp thông tin 1–2 ngày và cập nhật khoảng 20 biểu đồ trong 1–2 ngày. |
+| CP2 Problem Card | Nhờ ChatGPT phân tích, phản biện và gợi ý cấu trúc cho 3 Problem Cards ưu tiên; hỗ trợ mô tả quy trình bằng Mermaid. | AI giúp làm rõ actor, Job Story, bottleneck, impact, success metric và các phương án giải quyết không cần AI. | AI ban đầu chưa xác định chính xác phạm vi dữ liệu, đề xuất thời gian từng bước và target cải thiện khi chưa có số liệu kiểm chứng. | Tôi bổ sung phạm vi BCTC 5 năm của doanh nghiệp và nhóm peer, xác định nhập liệu thủ công là bottleneck chính. Tôi phân biệt thời gian thực tế với giả định và yêu cầu so sánh Excel, Power Query, Python trước khi chọn AI. |
+| CP4 Research | Sử dụng ChatGPT để lập danh sách các giả định cần kiểm chứng và gợi ý hướng nghiên cứu Power Query, Python, OCR và công cụ trích xuất BCTC. | AI giúp xác định những câu hỏi cần kiểm chứng, các phương án thay thế và những rủi ro cần nghiên cứu. | AI chưa có bằng chứng phỏng vấn thực tế hoặc kết quả thử nghiệm trên BCTC của doanh nghiệp và peer. Các công cụ mới chỉ là gợi ý nghiên cứu. | Tôi chưa xem các gợi ý là kết luận. Nhóm cần tự phỏng vấn người dùng, kiểm tra tài liệu nguồn và đánh giá công cụ trên bộ dữ liệu thực tế trước khi quyết định. |
+| CP5 Quy trình | Nhờ ChatGPT gợi ý sơ đồ quy trình hiện tại và các phương án cải tiến, bao gồm bước kiểm tra của con người và phương án quay về xử lý thủ công. | AI giúp trực quan hóa quy trình, làm rõ điểm nghẽn nhập dữ liệu và xác định các bước có thể áp dụng quy tắc tự động hóa. | AI chưa có số liệu thời gian riêng của từng công đoạn và chưa chứng minh hiệu quả của quy trình tương lai. | Tôi giữ thời gian 1–2 ngày là baseline hiện có, không coi các thời gian phân bổ chưa được đo là dữ liệu thực tế. Quy trình tương lai chỉ được xem là phương án đề xuất để nhóm đánh giá. |
+| CP5–6 Problem Statement | Sử dụng ChatGPT để rà soát các thành phần cần có của Problem Statement v0 và v1, gồm actor, workflow, bottleneck, impact, metric và boundary. | AI giúp chỉ ra các thông tin còn thiếu, đặc biệt là cách đo success metric, giới hạn quyền tự động hóa và trách nhiệm kiểm tra dữ liệu. | Các mục tiêu giảm thời gian và tính khả thi của giải pháp mới là giả thuyết. AI không có đủ bằng chứng để tự kết luận mức cải thiện hay viết Problem Statement cuối cùng thay nhóm. | Tôi xác định cần đo thời gian thực tế, kiểm soát độ chính xác và giữ quyền phê duyệt dữ liệu cho chuyên viên. Problem Statement chính thức sẽ do nhóm tự hoàn thiện sau khi kiểm chứng. |
+| CP6 Mức can thiệp / quyết định | Nhờ ChatGPT gợi ý khung so sánh No AI, Rule, Workflow và Agent; xác định các nhóm rủi ro Value, Usability, Feasibility và Viability cần đánh giá. | AI giúp phân biệt tự động hóa bằng quy tắc với Workflow có AI, đồng thời gợi ý các giới hạn kiểm soát và tiêu chí đánh giá kết quả. | AI chưa có kết quả thử nghiệm để chứng minh Workflow tốt hơn Rule. Việc lựa chọn Agent hoặc đưa ra quyết định Go khi chưa có bằng chứng có thể dẫn đến giải pháp quá phức tạp. | Tôi ưu tiên đánh giá các giải pháp đơn giản như Excel, Power Query và Python trước. Chỉ xem xét AI cho các tài liệu khó trích xuất hoặc ánh xạ; quyết định Go / Not Yet / No-Go phải dựa trên bằng chứng và do nhóm thống nhất. |
+
 
 ---
 
@@ -184,20 +187,38 @@ flowchart TD
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Các vấn đề mà tất cả chúng tôi cùng gặp phải là xử lý các tác vụ lặp đi lặp lại, mặc dù đơn giản nhưng tốn nhiều thời gian và rất dễ có sai sót
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Có đôi lúc chúng tôi bị tình trạng như vậy. Tuy nhiên, chúng tôi nhận ra và xử lý tình trạng này bằng cách nghĩ nhiều hơn đến công việc và những vấn đề hàng ngày mình đang gặp phải
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Tôi có. Khi các bạn phản biện rằng vấn đề mà tôi đang gặp phải cũng khá phổ biến chứ không chỉ bó hẹp trong lĩnh vực tài chính của tôi. Sau khi tìm hiểu, tôi đã nhất trí với các bạn.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Tôi không thấy bất ngờ. AI giúp công việc nhanh hơn và giảm thiểu được sai sót
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Diễn giải các khái niệm trong lĩnh vực tài chính cho các thành viên không có background tài chính
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Tôi sẽ phản biện nhóm mạnh hơn ở điểm: so sánh các công cụ hiện có với AI để đảm bảo rằng AI có ưu thế rõ ràng, ngay cả với những nhân sự low-tech
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
----
+Problem: Vấn đề nhóm tôi lựa chọn là việc thu thập, nhập và chuẩn hóa BCTC 5 năm của doanh nghiệp cùng 10 peer mất khoảng 1–2 ngày làm việc, trong đó nhập liệu thủ công là điểm nghẽn lớn nhất.
+
+Quy trình: Quy trình hiện tại gồm xác định doanh nghiệp và peer, thu thập BCTC, nhập số liệu, chuẩn hóa chỉ tiêu, đối chiếu dữ liệu và hoàn thiện bộ dữ liệu phân tích.
+
+Metric: Chúng tôi sử dụng thời gian xử lý làm chỉ tiêu chính, với baseline 1–2 ngày và mục tiêu thử nghiệm tối đa 4 giờ, đồng thời phải bảo đảm độ chính xác dữ liệu không suy giảm.
+
+Boundary: Giải pháp không được tự tạo số liệu còn thiếu, tự sửa BCTC gốc hoặc tự phê duyệt dữ liệu; chuyên viên phân tích vẫn chịu trách nhiệm kiểm tra và xác nhận kết quả.
+
+Mức can thiệp: Nhóm cần đánh giá Excel, Power Query và Python theo quy tắc trước; chỉ cân nhắc Workflow có AI nếu các phương án này không xử lý tốt sự khác biệt trong cấu trúc BCTC.
+
+Rủi ro: Việc lựa chọn giải pháp phải xem xét nhu cầu thực tế, khả năng sử dụng, tính khả thi về dữ liệu và hiệu quả chi phí, đặc biệt là rủi ro trích xuất hoặc ánh xạ sai chỉ tiêu tài chính.
+
+Quyết định: Sau khi kiểm chứng, nhóm quyết định Go, dựa trên kết quả đo lường, khả năng kiểm soát sai sót và mức độ cải thiện thực tế.
 
 ## 7. Tài liệu tham khảo
 
