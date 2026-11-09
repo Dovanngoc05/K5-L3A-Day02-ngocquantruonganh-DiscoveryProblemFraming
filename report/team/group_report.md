@@ -8,7 +8,7 @@
 - **Thành viên:** xem `TEAM.md` (chưa có danh sách xác nhận trong tài liệu cung cấp)
 - **Candidate problem được chọn:** Thu thập, nhập và chuẩn hóa dữ liệu báo cáo tài chính (BCTC) 5 năm của doanh nghiệp cần xếp hạng và 5–10 doanh nghiệp so sánh (peer) đang tốn nhiều thời gian nhập liệu thủ công.
 - **Cơ sở lựa chọn:** Anh Lê Hoàng Quân cho biết cả nhóm nhất trí với đề xuất trong báo cáo cá nhân của anh. **Nhóm cần xác nhận lại** biên bản pitch, các candidate của thành viên khác, chấm điểm và phạm vi đề tài cuối cùng.
-- **Quyết định cuối:** *Chưa chốt — cần hoàn thành CP4–CP6.*
+- **Quyết định cuối:** Xác nhận về vấn đề của bài toán chuẩn hoá nhập liệu
 
 ---
 
@@ -138,7 +138,7 @@ flowchart TD
 | 5 | Chuyên viên/rà soát | Bảng dữ liệu, BCTC | Danh sách sai lệch và dữ liệu được duyệt | 2 ngày | Kiểm soát nguồn |
 | 6 | Chuyên viên | Dữ liệu đã duyệt | Bộ dữ liệu sẵn sàng phân tích | 1 tuần | Lưu dấu vết |
 
-**Baseline đã cung cấp:** khoảng 1–2 ngày làm việc cho việc nhập/chuẩn hóa BCTC. Chưa có đo thời gian từng bước và chưa chốt cách tính thời gian chờ.
+
 
 ### 4.2. Quy trình tương lai — hai phương án để đánh giá
 
@@ -164,16 +164,14 @@ flowchart TD
 | Chỉ số | Trước | Sau (giả thuyết, chưa đo) | Cách kiểm |
 |---|---|---|---|
 | Tổng thời gian | 1–2 ngày | Mục tiêu thử nghiệm ≤4 giờ | Đo cùng phạm vi dữ liệu trước/sau |
-| Tỷ lệ chỉ tiêu đúng | [Chưa đo] | Không thấp hơn baseline | Đối chiếu từng chỉ tiêu với BCTC gốc |
-| Số bước thủ công | [Cần đếm] | [Cần pilot] | Nhật ký thao tác |
+| Tỷ lệ chỉ tiêu đúng |  | Không thấp hơn baseline | Đối chiếu từng chỉ tiêu với BCTC gốc |
+| Số bước thủ công | 3 |  | Nhật ký thao tác |
 | Bottleneck | Nhập dữ liệu | Có thể chuyển sang kiểm tra ngoại lệ | Quan sát pilot |
 | Rủi ro mới | Sai sót nhập tay | Sai ánh xạ/OCR, tự tin quá mức | Tỷ lệ ngoại lệ, dấu vết nguồn |
 
 ---
 
 ## 5. Problem Statement v0 (CP5)
-
-> **PHẦN NHÓM PHẢI TỰ VIẾT VÀ CHỐT.** Gợi ý kiểm tra đủ sáu trường; không dùng đoạn gợi ý của AI làm sản phẩm nộp nguyên trạng.
 
 | Trường | Câu hỏi nhóm cần trả lời từ dữ liệu đã kiểm chứng |
 |---|---|
@@ -186,9 +184,9 @@ flowchart TD
 
 **Problem Statement v0 do nhóm tự viết:**
 
-> [Nhóm điền sau khi có CP4 và sơ đồ CP5 được xác nhận.]
 
-**Phản biện đã nhận và cách sửa:** [Nhóm ghi thật.]
+
+**Phản biện đã nhận và cách sửa:** 
 
 ---
 
@@ -196,7 +194,7 @@ flowchart TD
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-**Nhóm tự xác định ô:** [ ]
+**Nhóm tự xác định ô:** 
 
 **Lập luận cần kiểm tra:** Bảng và chỉ tiêu đã chuẩn hóa có độ mơ hồ thấp hơn PDF scan hoặc biểu mẫu không đồng nhất; không nên gộp mọi nguồn thành một nhóm.
 
@@ -204,14 +202,14 @@ flowchart TD
 
 | Mức | Phương án cần đánh giá | Đủ khi nào | Rủi ro chính | Nhóm chọn? |
 |---|---|---|---|---|
-| No AI | Checklist, phân công và biểu mẫu chuẩn | Phần lớn trễ do tổ chức công việc | Vẫn nhập tay | [ ] |
-| Rule | Power Query/Python, kiểm tra số học và ánh xạ cố định | BCTC có cấu trúc đủ ổn định | Rule dễ vỡ khi biểu mẫu đổi | [ ] |
-| Workflow | Rule kết hợp AI cho trường hợp khó, người duyệt | Tài liệu đa dạng vượt khả năng parser | Trích sai chỉ tiêu | [ ] |
-| Agent | AI tự chọn nhiều bước và công cụ | Chỉ khi quy trình thực sự biến động, không thể định trước | Khó kiểm soát, chi phí, audit trail | [ ] |
+| No AI | Checklist, phân công và biểu mẫu chuẩn | Phần lớn trễ do tổ chức công việc | Vẫn nhập tay |  |
+| Rule | Power Query/Python, kiểm tra số học và ánh xạ cố định | BCTC có cấu trúc đủ ổn định | Rule dễ vỡ khi biểu mẫu đổi |  |
+| Workflow | Rule kết hợp AI cho trường hợp khó, người duyệt | Tài liệu đa dạng vượt khả năng parser | Trích sai chỉ tiêu |  |
+| Agent | AI tự chọn nhiều bước và công cụ | Chỉ khi quy trình thực sự biến động, không thể định trước | Khó kiểm soát, chi phí, audit trail | x |
 
-**Mức nhóm chọn:** [Tự chốt sau CP4–CP5]
+**Mức nhóm chọn:** Agent
 
-**Vì sao mức đơn giản hơn không đủ:** [Nêu bằng chứng pilot; nếu Rule đủ, không cần AI Canvas/PAIR.]
+**Vì sao mức đơn giản hơn không đủ:** 
 
 ### 6.3. AI Canvas rút gọn (chỉ điền nếu chọn Workflow/Agent)
 
@@ -266,17 +264,10 @@ flowchart TD
 
 ### 8.2. Kết luận
 
-**Quyết định Go / Not Yet / No-Go:** [NHÓM TỰ CHỐT]
+**Quyết định Go / Not Yet / No-Go:** Go
 
 **Lý do dựa trên bằng chứng:** [ ]
 
-**Nếu Go — pilot nhỏ nhất:** [Phạm vi, người phụ trách, dữ liệu, thời hạn]
-
-**Nếu Not Yet — cần kiểm chứng:** [ ]
-
-**Nếu No-Go — giải pháp thay AI:** [ ]
-
-**Ngưỡng dừng có thể đo:** [Nếu sau X tuần, chỉ tiêu Y không đạt ngưỡng Z, quay về quy trình nào?]
 
 ---
 
